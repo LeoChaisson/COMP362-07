@@ -12,7 +12,7 @@ int main(int argc, char *argv[]) {
 }
 
 void nothing(void){
-	printf("This ISP does nothing except print this line...(why? I dot even know)");
+	printf("This ISR does nothing except print this line...(why? I dot even know)");
 }
 void loopy(void){
 	int x=10;
@@ -21,11 +21,15 @@ void loopy(void){
 		x-1;
 	}
 }
-void isp(void){
+void isr(void){
 	printf("I am mocking an interrupt!");
+	printf("MOCKING");
+	printf("I am done mocking, end process!");
 }
 void thatHurt(void){
 	printf("Ouch my CPU!");
+	printf("attempting to heal and nourish CPU");
+	printf("CPU is fixed :)");
 }
 void addForMe(void){
 	int x=2;
